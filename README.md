@@ -1,5 +1,5 @@
 # aws-script
-AWS  python/boto scripts
+Python scripts for managing AWS service using boto.
 
 ## Delete launch configuration
 
