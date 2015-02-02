@@ -33,7 +33,7 @@ def delete_oldest_k_lc (conn, lc, k):
     else:
         sorted_lc = sorted(lc, key=lambda lc: lc.created_time)
         to_be_deleted_lc = sorted_lc[:num_to_be_deleted]
-        print('Deleteing launch configuration total number: {0}'.format(len(to_be_deleted_lc)))
+        print('Number of launch configuration to be deleted: {0}'.format(len(to_be_deleted_lc)))
         map(lambda x: delete_lc(conn, x), to_be_deleted_lc)
         return None
     
