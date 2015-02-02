@@ -28,7 +28,7 @@ def delete_oldest_k_lc (conn, lc, k):
     min_items = 25;
     num_to_be_deleted = min(k, len(lc) - min_items);
     if (num_to_be_deleted < 1):
-        print('Nothing to delete, count of launch configuration: {0}'.format(len(lc)))
+        print('Nothing to delete, number of launch configuration: {0}'.format(len(lc)))
         return None
     else:
         sorted_lc = sorted(lc, key=lambda lc: lc.created_time)
